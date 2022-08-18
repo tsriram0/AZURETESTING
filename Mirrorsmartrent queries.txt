@@ -1,0 +1,89 @@
+select * from [MirrorSmartRent].[dbo].[Device]
+order by date desc
+
+select * from [MirrorSmartRent].[dbo].[EmergencyCodes]
+order by date desc
+
+select * from [MirrorSmartRent].[dbo].[EmergencyCodeUsage]
+order by date desc
+
+select * from [MirrorSmartRent].[dbo].[HubStatus]
+order by date desc
+
+select * from [MirrorSmartRent].[dbo].[OccupiedUnitResidentGuestCo]
+order by date desc
+
+select * from [MirrorSmartRent].[dbo].[SystemHealth]
+order by date desc
+
+select * from [MirrorSmartRent].[dbo].[UnitStatus]
+order by date desc
+
+select * from [MirrorSmartRent].[dbo].[VacantUnitAccess]
+order by date desc
+
+select * from [MirrorSmartRent].[dbo].[WorkOrderAccessCodes]
+order by date desc
+
+
+select * from [MirrorSmartRent].[dbo].[SystemHealth]
+order by [Created Date] desc
+
+
+
+
+select date, count(*) from [MirrorSmartRent].[dbo].[Device]
+group by date
+order by date desc
+
+select date, count(*) from [MirrorSmartRent].[dbo].[EmergencyCodeUsage]
+group by date
+order by date desc
+
+select date, count(*) from [MirrorSmartRent].[dbo].[EmergencyCodes]
+group by date
+order by date desc
+
+select date, count(*) from [MirrorSmartRent].[dbo].[HubStatus]
+group by date
+order by date desc
+
+select date, count(*) from [MirrorSmartRent].[dbo].[Manager_guest_codes]
+group by date
+order by date desc
+
+select date, count(*) from [MirrorSmartRent].[dbo].[Moved_in_residents]
+group by date
+order by date desc
+
+select date, count(*) from [MirrorSmartRent].[dbo].[OccupiedUnitResidentGuestCo]
+group by date
+order by date desc
+
+select date, count(*) from [MirrorSmartRent].[dbo].[Staff_adoption]
+group by date
+order by date desc
+
+select date, count(*) from   [MirrorSmartRent].[dbo].[SystemHealth]
+group by date
+order by date desc
+
+select date, count(*) from [MirrorSmartRent].[dbo].[UnitStatus]
+group by date
+order by date desc
+
+select date, count(*) from [MirrorSmartRent].[dbo].[VacantUnitAccess]
+group by date
+order by date desc
+
+select date, count(*) from [MirrorSmartRent].[dbo].[WorkOrderAccessCodes]
+group by date
+order by date desc
+
+
+--DECLARE @jobId BINARY(16)
+
+--SELECT @jobId = CONVERT(uniqueidentifier, job_id) FROM msdb.dbo.sysjobs
+--WHERE name = 'Sightplan_Paginated'
+
+--SELECT @jobId
