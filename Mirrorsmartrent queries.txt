@@ -1,3 +1,6 @@
+select * from  MirrorSmartRent
+
+
 select * from [MirrorSmartRent].[dbo].[Device]
 order by date desc
 
